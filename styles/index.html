@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AO Universe — Celestial Homeworld</title>
+  <link rel="stylesheet" href="styles/ao-alive-animations.css">
+  <style>
+    .ao-portal-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      font-size: 0.75rem;
+    }
+    .card-content {
+      margin: 16px;
+      padding: 20px;
+      height: calc(100% - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+    .status-active { color: var(--ao-cyan); }
+    .status-in-build { color: var(--ao-magenta); }
+    .card-desc {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .ao-button {
+      background: transparent;
+      border: 1px solid var(--ao-cyan);
+      color: var(--ao-cyan);
+      padding: 10px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    .ao-button:hover {
+      background-color: var(--ao-cyan);
+      color: var(--ao-void);
+      box-shadow: 0 0 16px rgba(0, 234, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <header style="text-align: center; padding-top: 40px;">
+    <h1 class="display-text logo-pulse" style="font-size: 2.5rem; color: var(--ao-cyan); margin: 0;">AO UNIVERSE</h1>
+    <p class="hud-label" style="color: var(--ao-gold); margin-top: 8px;">CELESTIAL TOWN // LIVING DESIGN STANDARD</p>
+  </header>
+
+  <main class="ao-portal-grid">
+
+    <!-- Floating World 01 -->
+    <article class="ao-card house-1-pixel-dot">
+      <div class="card-header">
+        <span class="hud-label status-in-build">World 01</span>
+        <span class="hud-label status-in-build">In Build</span>
+      </div>
+      <div class="card-content glass">
+        <h2 class="display-text" style="margin: 0;">Anom's Corner</h2>
+        <p class="card-desc">Cozy sibling protector stories with Pixel &amp; Dot, non-verbal emote communication, and printable travel animals.</p>
+        <a href="https://anomartsy.xyz/kids.html" class="ao-button">Enter Portal ➔</a>
+      </div>
+    </article>
+
+    <!-- Floating World 02 -->
+    <article class="ao-card house-1-pixel-dot hero-pulse-ring">
+      <div class="card-header">
+        <span class="hud-label status-active">World 02</span>
+        <span class="hud-label status-active">Active</span>
+      </div>
+      <div class="card-content glass">
+        <h2 class="display-text" style="margin: 0;">Moonberry Farm</h2>
+        <p class="card-desc">A pastoral planet nested in the sky featuring cozy farmhouses, luminescent berry fields, and gratitude care missions.</p>
+        <a href="https://anomartsy.xyz/moonberry.html" class="ao-button">Visit Moonberry ➔</a>
+      </div>
+    </article>
+
+    <!-- Floating World 03 -->
+    <article class="ao-card house-4-arcade-patrol">
+      <div class="card-header">
+        <span class="hud-label status-in-build">World 03</span>
+        <span class="hud-label status-in-build">In Build</span>
+      </div>
+      <div class="card-content glass">
+        <h2 class="display-text" style="margin: 0;">District B Arcade</h2>
+        <p class="card-desc">Retro synthwave CRT gaming sector hosting Off-Grid and Sky Navigator, where play earns Glow Points and Anom Coins.</p>
+        <a href="https://anomartsy.xyz/arcade.html" class="ao-button">Launch Arcade ➔</a>
+      </div>
+    </article>
+
+  </main>
+
+</body>
+</html>
